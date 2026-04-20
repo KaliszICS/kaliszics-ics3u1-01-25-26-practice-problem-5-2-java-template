@@ -3,7 +3,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import java.lang.reflect.Method;
 
-class PracticeProblemTests {
+class PracticeProblemTest {
 
     // --- 1. findValue() ---
 
