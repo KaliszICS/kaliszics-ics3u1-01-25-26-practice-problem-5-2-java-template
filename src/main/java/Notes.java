@@ -46,23 +46,23 @@ class Notes {
 
 		//remove
 
-		// int[] arr5 = {1, 3, 5, 4, 3};
+		int[] arr5 = {1, 3, 5, 4, 3};
 
-		// int[] arr6= new int[arr.length-1]; //create a new array of the same size as the original plus one to account for the new element to be added.
+		int[] arr6= new int[arr.length-1]; //create a new array of the same size as the original plus one to account for the new element to be added.
 
-		// int removeIndex = 3; //index to insert our new element at
+		int removeIndex = 3; //index to insert our new element at
 
-		// int newIndex = 0;
+		int newIndex = 0;
 		
-		// //copying every one by one, use a for loop
+		//copying every one by one, use a for loop
 
-		// for (int i = 0; i < arr5.length; i++) {
-		// 	//copy the values 1 by one
-		// 	if (i != removeIndex) { //only copy and increase newIndex when we are copying over a correct value.  Do not increase or copy when it is the value to remove
-		// 		newIndex++;
-		// 		arr6[newIndex] = arr5[i];
-		// 	}
-		// }
+		for (int i = 0; i < arr5.length; i++) {
+			//copy the values 1 by one
+			if (i != removeIndex) { //only copy and increase newIndex when we are copying over a correct value.  Do not increase or copy when it is the value to remove
+				newIndex++;
+				arr6[newIndex] = arr5[i];
+			}
+		}
 
 		//searching
 
@@ -74,7 +74,7 @@ class Notes {
 			if (arr7[i] == searchValue) { //store the index where you found the element
 				result = i;
 				//first occurance change
-				// i = arr7.length;
+				i = arr7.length;
 			}
 		}
 
